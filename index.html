@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Move Fit | Moda Fitness</title>
+<meta name="description" content="Move Fit - Conforto, qualidade e estilo. Macacões, conjuntos de short, conjuntos de calça e avulsos. Compre direto pelo WhatsApp.">
+
+<!-- Fontes do Google Fonts: Bebas Neue para títulos, Inter para textos -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Arquivo de estilos separado -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- =============================
+     CABEÇALHO / MENU
+     ============================= -->
+<header class="header" id="topo">
+  <div class="header__inner">
+    <a href="#topo" class="logo">
+      <span class="logo__circle">M</span>
+      <span class="logo__text">MOVE FIT</span>
+    </a>
+
+    <!-- Menu para telas grandes -->
+    <nav class="nav" id="nav">
+      <a href="#macacoes">Macacões</a>
+      <a href="#shorts">Conjunto Short</a>
+      <a href="#calcas">Conjunto Calça</a>
+      <a href="#avulsos">Avulsos</a>
+    </nav>
+
+    <a class="btn btn--whats header__whats"
+       href="https://wa.me/557998298485?text=Oi!%20Vim%20pelo%20site%20da%20Move%20Fit%20e%20quero%20ver%20os%20produtos."
+       target="_blank" rel="noopener">
+      Fale no WhatsApp
+    </a>
+
+    <!-- Botão hambúrguer (mobile) -->
+    <button class="hamburguer" id="hamburguer" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- =============================
+     HERO / DESTAQUES DESLIZANTES (SLIDER)
+     ============================= -->
+<section class="hero" id="hero">
+  <div class="slider" id="slider">
+
+    <div class="slide slide--1 is-active">
+      <div class="slide__conteudo">
+        <p class="slide__eyebrow">Nova coleção</p>
+        <h1 class="slide__titulo">Treine com estilo, <br>viva com conforto.</h1>
+        <p class="slide__texto">Peças pensadas para valorizar sua melhor versão dentro e fora da academia.</p>
+        <a class="btn btn--whats"
+           href="https://wa.me/557998298485?text=Oi!%20Quero%20ver%20a%20nova%20cole%C3%A7%C3%A3o%20da%20Move%20Fit."
+           target="_blank" rel="noopener">Ver coleção no WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="slide slide--2">
+      <div class="slide__conteudo">
+        <p class="slide__eyebrow">Envio para todo o Brasil</p>
+        <h1 class="slide__titulo">Macacões que <br>marcam presença.</h1>
+        <p class="slide__texto">Modelagem que acompanha o corpo em cada movimento do seu treino.</p>
+        <a class="btn btn--whats"
+           href="https://wa.me/557998298485?text=Oi!%20Quero%20ver%20os%20maca%C3%A7%C3%B5es%20da%20Move%20Fit."
+           target="_blank" rel="noopener">Quero um macacão</a>
+      </div>
+    </div>
+
+    <div class="slide slide--3">
+      <div class="slide__conteudo">
+        <p class="slide__eyebrow">Conjuntos completos</p>
+        <h1 class="slide__titulo">Do treino <br>para o dia a dia.</h1>
+        <p class="slide__texto">Conjuntos de short e calça em tecidos leves, com caimento perfeito.</p>
+        <a class="btn btn--whats"
+           href="https://wa.me/557998298485?text=Oi!%20Quero%20ver%20os%20conjuntos%20da%20Move%20Fit."
+           target="_blank" rel="noopener">Quero um conjunto</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Setas -->
+  <button class="slider__seta slider__seta--esq" id="setaEsq" aria-label="Slide anterior">&#8249;</button>
+  <button class="slider__seta slider__seta--dir" id="setaDir" aria-label="Próximo slide">&#8250;</button>
+
+  <!-- Bolinhas indicadoras -->
+  <div class="slider__pontos" id="sliderPontos">
+    <button class="ponto is-active" data-slide="0" aria-label="Ir para o slide 1"></button>
+    <button class="ponto" data-slide="1" aria-label="Ir para o slide 2"></button>
+    <button class="ponto" data-slide="2" aria-label="Ir para o slide 3"></button>
+  </div>
+</section>
+
+<!-- =============================
+     FAIXA DE CATEGORIAS (atalho rápido)
+     ============================= -->
+<nav class="categorias-atalho">
+  <a href="#macacoes"><span>01</span>Macacão</a>
+  <a href="#shorts"><span>02</span>Conjunto Short</a>
+  <a href="#calcas"><span>03</span>Conjunto Calça</a>
+  <a href="#avulsos"><span>04</span>Avulsos</a>
+</nav>
+
+<main>
+
+  <!-- =============================
+       CATEGORIA 1: MACACÃO
+       ============================= -->
+  <section class="categoria" id="macacoes">
+    <div class="categoria__cabecalho">
+      <h2>Macacão</h2>
+      <p>Uma peça só, todo o movimento livre. Ideal para quem quer praticidade sem abrir mão do estilo.</p>
+    </div>
+
+    <div class="produtos-grid">
+
+      <article class="produto-card">
+        <div class="produto-card__imagem">
+          <img src="macacao_costa_aberta.jpeg" alt="Macacão Energy costas abertas" loading="lazy">
+        </div>
+        <div class="produto-card__info">
+          <h3>Macacão Energy</h3>
+          <p class="produto-card__desc">Tecido com leve sustentação, ideal para treinos de alta intensidade.</p>
+          <a class="btn btn--whats btn--small"
+             href="https://wa.me/557998298485?text=Oi!%20Tenho%20interesse%20no%20Maca%C3%A7%C3%A3o%20Energy."
+             target="_blank" rel="noopener">Comprar no WhatsApp</a>
+        </div>
+      </article>
+
+      <article class="produto-card">
+        <div class="produto-card__imagem">
+          <img src="macao_costa_2.jpeg" alt="Macacão Flow" loading="lazy">
+        </div>
+        <div class="produto-card__info">
+          <h3>Macacão Flow</h3>
+          <p class="produto-card__desc">Caimento solto na parte superior e ajuste nas pernas.</p>
+          <a class="btn btn--whats btn--small"
+             href="https://wa.me/557998298485?text=Oi!%20Tenho%20interesse%20no%20Maca%C3%A7%C3%A3o%20Flow."
+             target="_blank" rel="noopener">Comprar no WhatsApp</a>
+        </div>
+      </article>
+
+      <article class="produto-card">
+        <div class="produto-card__imagem produto-card__imagem--3"></div>
+        <div class="produto-card__info">
+          <h3>Macacão Shape</h3>
+          <p class="produto-card__desc">Modelagem que valoriza a silhueta, com recortes estratégicos.</p>
+          <a class="btn btn--whats btn--small"
+             href="https://wa.me/557998298485?text=Oi!%20Tenho%20interesse%20no%20Maca%C3%A7%C3%A3o%20Shape."
+             target="_blank" rel="noopener">Comprar no WhatsApp</a>
+        </div>
+      </article>
+
+      <article class="produto-card">
+        <div class="produto-card__imagem produto-card__imagem--4"></div>
+        <div class="produto-card__info">
+          <h3>Macacão Studio</h3>
+          <p class="produto-card__desc">Visual clean, perfeito para o treino e para sair depois.</p>
+          <a class="btn btn--whats btn--small"
+             href="https://wa.me/557998298485?text=Oi!%20Tenho%20interesse%20no%20Maca%C3%A7%C3%A3o%20Studio."
+             target="_blank" rel="noopener">Comprar no WhatsApp</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- =============================
+       CATEGORIA 2: CONJUNTO DE SHORT
+       ============================= -->
+  <section class="categoria categoria--escura" id="shorts">
+    <div class="categoria__cabecalho">
+      <h2>Conjunto de Short</h2>
+      <p>Top e short combinando, feitos para dias quentes de treino e liberdade de movimento.</p>
+    </div>
+
+    <div class="produtos-grid">
+
+      <article class="produto-card">
+        <div class="produto-card__imagem">
+          <img src="conjunto_corta vento.jpeg" alt="Conjunto Vibe corta vento" loading="lazy">
+        </div>
+        <div class="produto-card__info">
+          <h3>Conjunto Vibe</h3>
+          <p class="produto-card__desc">Top cropped com short de cintura alta, tecido fresquinho.</p>
+          <a class="btn btn--whats btn--small"
+             href="https://wa.me/557998298485?text=Oi!%20Tenho%20interesse%20no%20Conjunto%20Vibe."
+             target="_blank" rel="noopener">Comprar no WhatsApp</a>
+        </div>
+      </article>
+
+      <article class="produto-card">
+        <div class="produto-card__imagem">
+          <img src="corta_vento2.jpeg" alt="Conjunto Rise" loading="lazy">
+        </div>
+        <div class="produto-card__info">
+          <h3>Conjunto Rise</h3>
+          <p class="produto-card__desc">Modelagem que sustenta e alonga, ótimo para o dia a dia.</p>
+          <a class="btn btn--whats btn--small"
+             href="https://wa.me/557998298485?text=Oi!%20Tenho%20interesse%20no%20Conjunto%20Rise."
+             target="_blank" rel="noopener">Comprar no WhatsApp</a>
+        </div>
+      </article>
+
+      <article class="produto-card">
+        <div class="produto-card__imagem">
+          <img src="short_camiseta_preta.jpeg" alt="Conjunto Pulse preto e branco" loading="lazy">
+        </div>
+        <div class="produto-card__info">
+          <h3>Conjunto Pulse</h3>
+          <p class="produto-card__desc">Estampa exclusiva, perfeito para quem gosta de se destacar.</p>
+          <a class="btn btn--whats btn--small"
+             href="https://wa.me/557998298485?text=Oi!%20Tenho%20interesse%20no%20Conjunto%20Pulse."
+             target="_blank" rel="noopener">Comprar no WhatsApp</a>
+        </div>
+      </article>
+
+      <article class="produto-card">
+        <div class="produto-card__imagem">
+          <img src="top_azulmarinho.jpeg" alt="Conjunto Core azul" loading="lazy">
+        </div>
+        <div class="produto-card__info">
+          <h3>Conjunto Core</h3>
+          <p class="produto-card__desc">Básico essencial, combina com tudo no seu closet fitness.</p>
+          <a class="btn btn--whats btn--small"
+             href="https://wa.me/557998298485?text=Oi!%20Tenho%20interesse%20no%20Conjunto%20Core."
+             target="_blank" rel="noopener">Comprar no WhatsApp</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- =============================
+       CATEGORIA 3: CONJUNTO EM CALÇAS
+       ============================= -->
+  <section class="categoria" id="calcas">
+    <div class="categoria__cabecalho">
+      <h2>Conjunto em Calça</h2>
+      <p>Para quem prefere mais cobertura sem perder o ajuste. Do treino direto pra rua.</p>
+    </div>
+
+    <div class="produtos-grid">
+
+      <article class="produto-card">
+        <div class="produto-card__imagem">
+          <img src="ja_saiu.jpeg" alt="Conjunto Motion" loading="lazy">
+        </div>
+        <div class="produto-card__info">
+          <h3>Conjunto Motion</h3>
+          <p class="produto-card__desc">Calça legging com top de alças, para treinos completos.</p>
+          <a class="btn btn--whats btn--small"
+             href="https://wa.me/557998298485?text=Oi!%20Tenho%20interesse%20no%20Conjunto%20Motion."
+             target="_blank" rel="noopener">Comprar no WhatsApp</a>
+        </div>
+      </article>
+
+      <article class="produto-card">
+        <div class="produto-card__imagem produto-card__imagem--10"></div>
+        <div class="produto-card__info">
+          <h3>Conjunto Studio Pants</h3>
+          <p class="produto-card__desc">Cintura alta modeladora e blusa canelada.</p>
+          <a class="btn btn--whats btn--small"
+             href="https://wa.me/557998298485?text=Oi!%20Tenho%20interesse%20no%20Conjunto%20Studio%20Pants."
+             target="_blank" rel="noopener">Comprar no WhatsApp</a>
+        </div>
+      </article>
+
+      <article class="produto-card">
+        <div class="produto-card__imagem produto-card__imagem--11"></div>
+        <div class="produto-card__info">
+          <h3>Conjunto Urban Fit</h3>
+          <p class="produto-card__desc">Visual streetwear com conforto de treino.</p>
+          <a class="btn btn--whats btn--small"
+             href="https://wa.me/557998298485?text=Oi!%20Tenho%20interesse%20no%20Conjunto%20Urban%20Fit."
+             target="_blank" rel="noopener">Comprar no WhatsApp</a>
+        </div>
+      </article>
+
+      <article class="produto-card">
+        <div class="produto-card__imagem produto-card__imagem--12"></div>
+        <div class="produto-card__info">
+          <h3>Conjunto Essential</h3>
+          <p class="produto-card__desc">Peça coringa, fácil de combinar com qualquer look.</p>
+          <a class="btn btn--whats btn--small"
+             href="https://wa.me/557998298485?text=Oi!%20Tenho%20interesse%20no%20Conjunto%20Essential."
+             target="_blank" rel="noopener">Comprar no WhatsApp</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- =============================
+       CATEGORIA 4: AVULSOS
+       ============================= -->
+  <section class="categoria categoria--escura" id="avulsos">
+    <div class="categoria__cabecalho">
+      <h2>Avulsos</h2>
+      <p>Tops, shorts e calças vendidos separados, pra você montar o conjunto do seu jeito.</p>
+    </div>
+
+    <div class="produtos-grid">
+
+      <article class="produto-card">
+        <div class="produto-card__imagem">
+          <img src="ja_saiu2.jpeg" alt="Top Alças Fit" loading="lazy">
+        </div>
+        <div class="produto-card__info">
+          <h3>Top Alças Fit</h3>
+          <p class="produto-card__desc">Sustentação média, tecido macio e respirável.</p>
+          <a class="btn btn--whats btn--small"
+             href="https://wa.me/557998298485?text=Oi!%20Tenho%20interesse%20no%20Top%20Al%C3%A7as%20Fit."
+             target="_blank" rel="noopener">Comprar no WhatsApp</a>
+        </div>
+      </article>
+
+      <article class="produto-card">
+        <div class="produto-card__imagem">
+          <img src="corta_vento3.jpeg" alt="Short Move" loading="lazy">
+        </div>
+        <div class="produto-card__info">
+          <h3>Short Move</h3>
+          <p class="produto-card__desc">Cós largo, sem transparência, ótimo para agachamentos.</p>
+          <a class="btn btn--whats btn--small"
+             href="https://wa.me/557998298485?text=Oi!%20Tenho%20interesse%20no%20Short%20Move."
+             target="_blank" rel="noopener">Comprar no WhatsApp</a>
+        </div>
+      </article>
+
+      <article class="produto-card">
+        <div class="produto-card__imagem">
+          <img src="kit_mega_treino.jpeg" alt="Kit Mega Treino" loading="lazy">
+        </div>
+        <div class="produto-card__info">
+          <h3>Kit Mega Treino</h3>
+          <p class="produto-card__desc">Top, short e meia combinando, tudo o que você precisa em um kit só.</p>
+          <a class="btn btn--whats btn--small"
+             href="https://wa.me/557998298485?text=Oi!%20Tenho%20interesse%20no%20Kit%20Mega%20Treino."
+             target="_blank" rel="noopener">Comprar no WhatsApp</a>
+        </div>
+      </article>
+
+      <article class="produto-card">
+        <div class="produto-card__imagem produto-card__imagem--16"></div>
+        <div class="produto-card__info">
+          <h3>Blusa Cropped</h3>
+          <p class="produto-card__desc">Leve e soltinha, perfeita para dias quentes.</p>
+          <a class="btn btn--whats btn--small"
+             href="https://wa.me/557998298485?text=Oi!%20Tenho%20interesse%20na%20Blusa%20Cropped."
+             target="_blank" rel="noopener">Comprar no WhatsApp</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- =============================
+       CHAMADA FINAL
+       ============================= -->
+  <section class="cta-final">
+    <h2>Não achou o que procurava?</h2>
+    <p>Fala com a gente no WhatsApp que te ajudamos a montar o look ideal.</p>
+    <a class="btn btn--whats btn--grande"
+       href="https://wa.me/557998298485?text=Oi!%20Preciso%20de%20ajuda%20para%20escolher%20uma%20pe%C3%A7a%20da%20Move%20Fit."
+       target="_blank" rel="noopener">Falar com a Move Fit</a>
+  </section>
+
+</main>
+
+<!-- =============================
+     RODAPÉ
+     ============================= -->
+<footer class="rodape">
+  <div class="rodape__inner">
+    <div class="rodape__marca">
+      <span class="logo__circle">M</span>
+      <span class="logo__text">MOVE FIT</span>
+      <p>Conforto, qualidade e estilo. Enviamos para todo o Brasil.</p>
+    </div>
+
+    <div class="rodape__links">
+      <h4>Categorias</h4>
+      <a href="#macacoes">Macacão</a>
+      <a href="#shorts">Conjunto Short</a>
+      <a href="#calcas">Conjunto Calça</a>
+      <a href="#avulsos">Avulsos</a>
+    </div>
+
+    <div class="rodape__contato">
+      <h4>Contato</h4>
+      <a href="https://wa.me/557998298485" target="_blank" rel="noopener">WhatsApp: (79) 9829-8485</a>
+      <a href="https://instagram.com/moove_energy" target="_blank" rel="noopener">Instagram: @moove_energy</a>
+    </div>
+  </div>
+  <p class="rodape__copy">© 2026 Move Fit. Todos os direitos reservados.</p>
+</footer>
+
+<!-- Botão flutuante do WhatsApp -->
+<a class="whats-flutuante"
+   href="https://wa.me/557998298485?text=Oi!%20Vim%20pelo%20site%20da%20Move%20Fit."
+   target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+    <path d="M17.6 6.32A8.86 8.86 0 0 0 12 4a8.94 8.94 0 0 0-7.75 13.4L3 21l3.7-1.2A8.9 8.9 0 0 0 12 21a8.94 8.94 0 0 0 5.6-15.7ZM12 19.3a7.3 7.3 0 0 1-3.75-1l-.27-.16-2.36.77.77-2.3-.17-.28A7.34 7.34 0 1 1 19.3 12 7.36 7.36 0 0 1 12 19.3Zm4-5.46c-.22-.11-1.3-.64-1.5-.72s-.35-.11-.5.11-.57.72-.7.86-.26.16-.48.05a6 6 0 0 1-3-2.62c-.22-.38.22-.35.63-1.17a.4.4 0 0 0 0-.38c-.05-.11-.5-1.2-.68-1.64s-.36-.38-.5-.38h-.42a.82.82 0 0 0-.6.28 2.5 2.5 0 0 0-.77 1.85A4.34 4.34 0 0 0 8.15 12a10 10 0 0 0 3.83 3.38c.53.23.95.36 1.27.46a3 3 0 0 0 1.4.09 2.3 2.3 0 0 0 1.5-1.06 1.9 1.9 0 0 0 .13-1.06c-.05-.1-.2-.16-.42-.27Z"/>
+  </svg>
+</a>
+
+<!-- Arquivo de comportamento (slider e menu mobile) -->
+<script src="script.js"></script>
+</body>
+</html>
