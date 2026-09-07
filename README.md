@@ -58,3 +58,6 @@ Observações
 O site é responsivo: se ajusta para celular, tablet e desktop.
 O menu vira um ícone de hambúrguer em telas pequenas.
 Algumas fotos dos cards ainda estão com um fundo em degradê (placeholder), porque faltam fotos reais para preencher todos os espaços — é só seguir o passo "Trocar fotos" acima quando tiver mais imagens.
+
+
+link: https://moove-energy-tau.vercel.app/
