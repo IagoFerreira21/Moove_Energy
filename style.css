@@ -544,6 +544,20 @@ button:focus-visible {
   font-size: 0.8rem;
   margin-top: 3rem;
 }
+.rodape__dev {
+  text-align: center;
+  color: rgba(185, 173, 174, 0.45);
+  font-size: 0.78rem;
+  margin-top: 0.6rem;
+}
+
+.rodape__dev a {
+  color: rgba(227, 156, 160, 0.75);
+}
+
+.rodape__dev a:hover {
+  color: var(--rosa);
+}
 
 /* ===============================================
    BOTÃO FLUTUANTE DO WHATSAPP
