@@ -235,9 +235,9 @@ button:focus-visible {
   background-repeat: no-repeat;
 }
 
-.slide--1 { background-image: linear-gradient(0deg, rgba(245, 238, 245, 0.25), rgba(20,16,20,0.25)), url('ja_saiu.jpeg'); }
-.slide--2 { background-image: linear-gradient(0deg, rgba(245, 238, 245, 0.25), rgba(20,16,20,0.25)), url('ja_saiu2.jpeg'); }
-.slide--3 { background-image: linear-gradient(0deg, rgba(245, 238, 245, 0.25), rgba(20,16,20,0.25)), url('macao_costa_2.jpeg'); }
+.slide--1 { background-image: linear-gradient(0deg, rgba(245, 238, 245, 0.25), rgba(20,16,20,0.25)), url('tela_principal1.peg'); }
+.slide--2 { background-image: linear-gradient(0deg, rgba(245, 238, 245, 0.25), rgba(20,16,20,0.25)), url('tela_principal2.jpeg'); }
+.slide--3 { background-image: linear-gradient(0deg, rgba(245, 238, 245, 0.25), rgba(20,16,20,0.25)), url('tela_principal3.jpeg'); }
 
 .slide__conteudo {
   max-width: var(--largura-max);
